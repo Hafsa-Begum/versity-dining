@@ -28,7 +28,7 @@
 }
 
 #chk:checked ~ .login{
-	transform: translateY(-350px);
+	transform: translateY(-360px);
 }
 #chk:checked ~ .login label{
 	transform: scale(1);
