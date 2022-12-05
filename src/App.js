@@ -1,21 +1,19 @@
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import About from './pages/About/About';
-import Contact from './pages/Contact/Contact';
-import Error from './pages/Error/Error';
-import Home from './pages/Home/Home';
-import LoginSignUp from './pages/LoginSignUp/LoginSignUp';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/routes';
 
 
 function App() {
   return (
-    <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="about" element={ <About/> } />
-        <Route path="contact" element={ <Contact/> } />
-        <Route path="login" element={ <LoginSignUp/> } />
-        <Route path="*" element={ <Error/> } />
-      </Routes>
+    <div>
+      <RouterProvider router={router}/>
+    </div>
+    // <Routes>
+    //     <Route path="/" element={ <Home/> } />
+    //     <Route path="about" element={ <About/> } />
+    //     <Route path="contact" element={ <Contact/> } />
+    //     <Route path="login" element={ <LoginSignUp/> } />
+    //     <Route path="*" element={ <Error/> } />
+    //   </Routes>
   );
 }
 
